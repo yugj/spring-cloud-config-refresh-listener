@@ -10,6 +10,10 @@ import org.springframework.context.ApplicationEvent;
 public class ConfigRefreshEvent extends ApplicationEvent {
 
     private String key;
+
+    /**
+     * 1.x版本beforeRefresh = afterRefresh
+     */
     private Object beforeRefresh;
     private Object afterRefresh;
 
