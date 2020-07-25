@@ -34,4 +34,6 @@ spring cloud config refresh listener
         + ", after :" + event.getAfterRefresh());
     }
 ```
+## 版本兼容
+* spring boot2.x
 
