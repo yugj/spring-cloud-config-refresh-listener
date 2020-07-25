@@ -1,9 +1,12 @@
 # spring-cloud-config-refresh-listener 
+
 spring cloud 监听特定配置变化  
 spring cloud config refresh listener  
 
 ## 使用说明
+
 引入依赖
+
 ```
 <dependency>
     <groupId>org.github.yugj</groupId>
@@ -13,6 +16,7 @@ spring cloud config refresh listener
 ```
 
 启动类添加注解
+
 ```
    @SpringBootApplication
    @EnableConfigRefreshListener
@@ -25,6 +29,7 @@ spring cloud config refresh listener
 ```
 
 监听关注的配置变化（这边直接采用原生el表达式匹配事件）
+
 ```
     @EventListener(condition = "#event.key eq 'sys.log.root'")
     void handleConditionalListener(ConfigRefreshEvent event) {
@@ -34,6 +39,11 @@ spring cloud config refresh listener
         + ", after :" + event.getAfterRefresh());
     }
 ```
+
 ## 版本兼容
-* spring boot2.x
+
+| springboot版本 | spring-cloud-config-refresh-listener |
+| -------------- | ------------------------------------ |
+| 1.x            | 1.0.0                                |
+| 2.x            | 2.0.0                                |
 
