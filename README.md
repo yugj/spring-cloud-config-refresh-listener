@@ -35,5 +35,13 @@ spring cloud config refresh listener
     }
 ```
 ## 版本兼容
-* spring boot2.x
 
+| springboot版本 | spring-cloud-config-refresh-listener |
+| -------------- | ------------------------------------ |
+| 1.x            | 1.0.0                                |
+| 2.x            | 2.0.0                                |
+
+## Config 组件支持
+* spring cloud config
+* alibaba nacos
+* apollo (待测试)
