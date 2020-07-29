@@ -6,7 +6,7 @@ spring cloud config refresh listener
 引入依赖
 ```
 <dependency>
-    <groupId>org.github.yugj</groupId>
+    <groupId>com.github.yugj</groupId>
     <artifactId>config-refresh-listener-core</artifactId>
     <version>1.0-SNAPSHOT</version>
 </dependency>
