@@ -1,6 +1,6 @@
-package org.github.yugj.config.refresh.listener.demo;
+package com.github.yugj.config.refresh.listener.demo;
 
-import org.github.yugj.config.refresh.listener.core.event.ConfigRefreshEvent;
+import com.github.yugj.config.refresh.listener.core.event.ConfigRefreshEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 

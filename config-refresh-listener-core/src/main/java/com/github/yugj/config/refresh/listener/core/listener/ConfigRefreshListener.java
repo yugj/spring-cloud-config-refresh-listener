@@ -1,6 +1,6 @@
-package org.github.yugj.config.refresh.listener.core.listener;
+package com.github.yugj.config.refresh.listener.core.listener;
 
-import org.github.yugj.config.refresh.listener.core.event.ConfigRefreshEvent;
+import com.github.yugj.config.refresh.listener.core.event.ConfigRefreshEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.context.environment.EnvironmentChangeEvent;
 import org.springframework.context.ApplicationEventPublisher;

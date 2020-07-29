@@ -1,6 +1,6 @@
-package org.github.yugj.config.refresh.listener.core.autoconfigure;
+package com.github.yugj.config.refresh.listener.core.autoconfigure;
 
-import org.github.yugj.config.refresh.listener.core.listener.ConfigRefreshListener;
+import com.github.yugj.config.refresh.listener.core.listener.ConfigRefreshListener;
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.*;

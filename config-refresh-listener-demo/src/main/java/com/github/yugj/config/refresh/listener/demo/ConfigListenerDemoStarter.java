@@ -1,6 +1,6 @@
-package org.github.yugj.config.refresh.listener.demo;
+package com.github.yugj.config.refresh.listener.demo;
 
-import org.github.yugj.config.refresh.listener.core.autoconfigure.EnableConfigRefreshListener;
+import com.github.yugj.config.refresh.listener.core.autoconfigure.EnableConfigRefreshListener;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

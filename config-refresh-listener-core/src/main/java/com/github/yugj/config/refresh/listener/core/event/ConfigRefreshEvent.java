@@ -1,4 +1,4 @@
-package org.github.yugj.config.refresh.listener.core.event;
+package com.github.yugj.config.refresh.listener.core.event;
 
 import org.springframework.context.ApplicationEvent;
 
