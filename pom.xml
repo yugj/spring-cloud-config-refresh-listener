@@ -14,6 +14,25 @@
         <module>config-refresh-listener-demo</module>
     </modules>
 
+    <licenses>
+        <license>
+            <name>MIT</name>
+            <url>https://github.com/yugj/spring-cloud-config-refresh-listener/blob/master/LICENSE</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>yugj</name>
+            <email>yugj@hotmail.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git@github.com:yugj/spring-cloud-config-refresh-listener.git</connection>
+        <developerConnection>scm:git@github.com:yugj/spring-cloud-config-refresh-listener.git</developerConnection>
+        <url>https://github.com/yugj/spring-cloud-config-refresh-listener</url>
+    </scm>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -51,6 +70,66 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <profiles>
+        <profile>
+            <id>release</id>
+            <build>
+                <plugins>
+                    <!-- Source -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-source-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>jar-no-fork</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <!-- Javadoc -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <!-- GPG -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>1.6</version>
+                        <executions>
+                            <execution>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+            <distributionManagement>
+                <snapshotRepository>
+                    <id>sonatype-nexus-snapshots</id>
+                    <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+                </snapshotRepository>
+                <repository>
+                    <id>sonatype-nexus-staging</id>
+                    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+                </repository>
+            </distributionManagement>
+        </profile>
+    </profiles>
 
 
 </project>
