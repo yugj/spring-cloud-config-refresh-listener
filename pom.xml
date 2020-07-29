@@ -9,6 +9,10 @@
     <packaging>pom</packaging>
     <version>2.0.0</version>
 
+    <name>spring-cloud-config-refresh-listener</name>
+    <url>https://github.com/yugj/spring-cloud-config-refresh-listener</url>
+    <description>spring cloud config refresh listener</description>
+
     <modules>
         <module>config-refresh-listener-core</module>
         <module>config-refresh-listener-demo</module>
