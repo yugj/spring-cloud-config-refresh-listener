@@ -17,7 +17,7 @@
 
     <properties>
         <skip-java-source>false</skip-java-source>
-        <skip-java-doc>true</skip-java-doc>
+        <skip-java-doc>false</skip-java-doc>
     </properties>
 
     <dependencies>
